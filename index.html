@@ -10,13 +10,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="header">
+            <div class="header animated fadeInDown delay-5s">
                 <img src="img/logo.png" alt="Logo" class="logo">
 
                 <nav class="menu-list">
@@ -40,9 +42,9 @@
         <div class="container">
             <div class="main-content">
                 <div class="content">
-                    <span class="genre">2019, фэнтези</span>
+                    <span class="genre animated fadeInRight delay-1s">2019, фэнтези</span>
 
-                    <div class="rating">
+                    <div class="rating animated fadeInLeft delay-1s">
                         <div class="rating-stars">
                             <img src="img/star.svg" alt="Star" class="star">
                             <img src="img/star.svg" alt="Star" class="star">
@@ -58,24 +60,24 @@
                         <div class="rating-number">7/10</div>
                     </div>
 
-                    <h1 class="main-title">Ведьмак</h1>
-                    <p class="main-description">
+                    <h1 class="main-title animated fadeInRight delay-1s">Ведьмак</h1>
+                    <p class="main-description animated fadeInLeft delay-2s">
                         Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует
                         по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной
                         нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс.
                     </p>
 
-                    <button class="main-button">Смотреть онлайн</button>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="main-button animated fadeInRight delay-3s">Смотреть трейлер</a>
                 </div>
 
-                <button class="play">
+                <a class="play" data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA">
                     <img src="img/play.svg" alt="Play" class="play_img">
-                </button>
+                </a>
             </div>
             <!-- /.main-content -->
 
 
-            <div class="series">
+            <div class="series animated fadeInLeft delay-4s">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -135,7 +137,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer animated fadeInUp delay-5s">
         <div class="container">
             <div class="footer-content">
                 <div class="left">
@@ -154,6 +156,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
 </body>
