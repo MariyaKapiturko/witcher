@@ -6,10 +6,6 @@
   font-style: normal;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
   background-color: #141218;
   background-image: url('../img/background1.jpg');
@@ -361,6 +357,12 @@ body {
 }
 
 /* Responsive */
+@media (min-width: 760px) {
+  body {
+    overflow: hidden;
+  }
+}
+
 @media (max-width: 760px) {
   .play {
     display: none;
