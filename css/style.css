@@ -204,7 +204,7 @@ body {
   position: absolute;
   left: -16px;
   top: -16px;
-  animation: pulse .7s ease-in-out infinite;
+  animation: pulse .7s ease-in-out 5.5s infinite;
 }
 
 /* Slider */
@@ -357,11 +357,11 @@ body {
 }
 
 /* Responsive */
-@media (min-width: 760px) {
+/* @media (min-width: 760px) {
   body {
     overflow: hidden;
   }
-}
+} */
 
 @media (max-width: 760px) {
   .play {
